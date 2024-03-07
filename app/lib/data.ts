@@ -17,7 +17,7 @@ export async function fetchRevenue() {
   noStore();
 
   try {
-
+ 
     const data = await sql<Revenue>`SELECT * FROM revenue`;
 
     return data.rows;
